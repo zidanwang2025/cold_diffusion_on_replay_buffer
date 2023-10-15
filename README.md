@@ -1,10 +1,10 @@
 ## Cold Diffusion on the Replay Buffer: Learning to Plan from Known Good States
 
 Gymnasium Maze Environments
-![Sample Image](resources/figs/intuition.png)
+![Sample Image](resources/figs/CDRB_UNet_10000_1.jpg)
 
 Gymnasium Fetch Environments
-![Sample Image](resources/figs/fetch-combinated-labeled.png)
+![Sample Image](resources/figs/robo-envs.png)
 
 ## Overview
 
