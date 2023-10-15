@@ -1,0 +1,17 @@
+**/__pycache__/
+**/.DS_Store/
+**/.idea/
+**/.ipynb_checkpoints/
+
+expert_data/
+saved_trajectories/
+**/wandb/
+**/all_model/
+**/loss_log/
+**/replay_buffer_kmeans/
+
+**/*.txt
+**/*.sh
+**/*.json
+**/*.jsonl
+**/nohup.out

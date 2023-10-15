@@ -1,0 +1,30 @@
+{
+    "project": {
+        "name": "cdrb",
+        "mount": [],
+        "exclude": [".git", ".env", ".venv", "Pipfile", "wandb", "*.mp4", "*.egg-info", "__pycache__", ".output", "*.tar.gz", "data-dir", "__pypackages__", ".DS_Store"],  // ".png"
+    },
+    "machines": {
+        "elm": {
+            "docker": {
+                "image": "ripl/cdrb-v1.2.2",
+                "group_id": 4000,  // ripl
+            },
+            "mount_from_host": {
+                "/ripl/user/projects/cdrb": "/cdrb",
+                "/dev/shm": "/dev/shm",
+            },
+        },
+        "tticslurm": {
+            "mode": "slurm-sing",
+            "mount": [],
+            "mount_from_host": {
+                "/share/data/ripl-takuma/projects/cdrb": "/cdrb",
+            },
+            "singularity": {
+                "sif_file": "/share/data/ripl-takuma/singularity-workspace/cdrb/cdrb-v1.2.2.sif",
+                "writable_tmpfs": true,
+            }
+        },
+    }
+}
