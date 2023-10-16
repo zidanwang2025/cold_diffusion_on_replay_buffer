@@ -1,7 +1,7 @@
 def main():
     # Generate CDRB training script with various settings
     script_file_name = 'train_eval_command.sh'
-    seed_list = [111, 222, 333]
+    seed_list = [111, 222, 333, 444, 555]
     commands = []
 
     commands.append(f"python launcher.py --n-diffusion-steps 16 --join-action-state False --trim-buffer-mode kmeans --forward-sample-noise 0.0 --action-weight 1 --k-cluster 1 --horizon 56 --short-horizon 56 --n-train-steps 5000 --n-steps-per-epoch 100 --observation-dim 25 --action-dim 4 --data-path ../expert_data/FetchPickObstacle-v2-normalized.hdf5 --dataset FetchPickObstacle-v2 --nickname normed_16 --control-goal-size 25 &")
